@@ -23,13 +23,13 @@ public class WorkoutServiceImpl implements WorkoutService{
 	public List<Workout> getAllWorkouts() {
 		List<Workout> workoutList = new ArrayList<Workout>();
 		workoutList = workoutRepository.findAll();
-		if(!(workoutList != null && workoutList.size() <= 0)) {
+		/*if(!(workoutList != null && workoutList.size() <= 0)) {
 			for(Workout work : workoutList) {
 				System.out.println(work.getWorkoutId() + " "+ work.getWorkoutTitle());
 			}
 		} else {
 			System.out.println("No Workout Data");
-		}
+		}*/
 		return workoutList;
 	}
 

@@ -31,9 +31,11 @@ public class CategoryController {
 		return catList;
 	}
 	
-	@RequestMapping(value = "/addCategory", method = RequestMethod.POST)
+	@RequestMapping(value = "/addCategory", method = RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
 	public Category addCategory(@RequestBody Category cat) {
-		return categoryService.addCategory(cat);
+		
+		Category cat1 =  categoryService.addCategory(cat);
+		return cat1;
 	}
 	
 	@RequestMapping(value = "/deleteCategory", method = RequestMethod.POST)

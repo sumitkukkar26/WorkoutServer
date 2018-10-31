@@ -3,6 +3,7 @@ package com.cognizant.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,10 +33,10 @@ public class WorkoutController {
 		return workouts;
 	}
 	
-	@RequestMapping(value = "/addWorkout", method = RequestMethod.POST)
+	@RequestMapping(value = "/addWorkout", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public Workout addWorkout(@RequestBody Workout work) {
-		System.out.println(work.toString());
-		return workoutService.addWorkout(work);
+		Workout wo = workoutService.addWorkout(work);
+		return wo;
 	}
 	
 	@RequestMapping(value ="/getWorkoutById/{workoutId}", method = RequestMethod.GET) 
