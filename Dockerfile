@@ -8,7 +8,7 @@ EXPOSE 8090
 # The application's jar file
 #ARG JAR_FILE=target/TodoListManagerJPA_Docker.jar
 #ARG JAR_FILE=/target/Workout-0.0.1-SNAPSHOT.jar
-ARG JAR_FILE=./target/Workout-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/Workout-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} Workout-0.0.1-SNAPSHOT.jar
 # Run the jar file
