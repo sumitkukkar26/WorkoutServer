@@ -11,6 +11,6 @@ EXPOSE 8090
 #ARG JAR_FILE=target/Workout-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 #ADD ${JAR_FILE} Workout-0.0.1-SNAPSHOT.jar
-copy target/Workout-0.0.1-SNAPSHOT.jar Workout-0.0.1-SNAPSHOT.jar
+copy build/libs/Workout-0.0.1-SNAPSHOT.jar /Workout-0.0.1-SNAPSHOT.jar
 # Run the jar file
 ENTRYPOINT ["java","-jar","Workout-0.0.1-SNAPSHOT.jar"]`
