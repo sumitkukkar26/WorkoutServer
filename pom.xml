@@ -79,6 +79,7 @@
 <version>1.4.0</version>
 <configuration>
 <repository>aarshad88/workoutapp</repository>
+	<dockerDirectory>${project.basedir}</dockerDirectory>
 <tag>${project.version}</tag>
 <buildArgs>
 <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
