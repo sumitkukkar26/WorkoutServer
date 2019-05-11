@@ -78,7 +78,7 @@
 	<artifactId>dockerfile-maven-plugin</artifactId>
 	<version>1.4.0</version>
 	<configuration>
-		<repository>https://cloud.docker.com/repository/docker/aarshad88/workoutapp</repository>
+		<repository>aarshad88/workoutapp</repository>
 		<username>aarshad88</username>
          	<password>Parle-G12345</password>
 		<dockerDirectory>${project.basedir}</dockerDirectory>
