@@ -81,8 +81,6 @@
 				
 	<configuration>
 		<repository>aarshad88/workoutapp</repository>
-		<username>aarshad88</username>
-         	<password>Parle-G12345</password>
 		<dockerDirectory>${project.basedir}</dockerDirectory>
 		<tag>${project.version}</tag>
 			<buildArgs>
