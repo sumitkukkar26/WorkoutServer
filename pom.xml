@@ -82,9 +82,9 @@
 	<configuration>
 		<repository>aarshad88/workoutapp</repository>
 		<dockerDirectory>${project.basedir}</dockerDirectory>
-		<tag>${project.version}.${git-revision}</tag>
+		<tag>${project.version}</tag>
 			<buildArgs>
-				<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+				<JAR_FILE>target/${project.build.finalName}_1.jar</JAR_FILE>
 			</buildArgs>
 	</configuration>
 				
