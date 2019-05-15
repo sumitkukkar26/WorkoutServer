@@ -81,6 +81,7 @@
 				
 	<configuration>
 		<repository>aarshad88/workoutapp</repository>
+		<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 		<dockerDirectory>${project.basedir}</dockerDirectory>
 		<tag>${project.version}</tag>
 			<buildArgs>
