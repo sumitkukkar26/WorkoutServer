@@ -84,7 +84,7 @@
 		<username>aarshad88</username>
 		<password>Parle-G12345</password>
 		<dockerDirectory>${project.basedir}</dockerDirectory>
-		<tag>${project.version}.${git-revision}</tag>
+		<tag>${project.version}</tag>
 			<buildArgs>
 				<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 			</buildArgs>
