@@ -12,3 +12,4 @@ ARG JAR_FILE
 ADD ${JAR_FILE} /Workout-0.0.1-SNAPSHOT.jar
 #  Run the jar file.
 ENTRYPOINT ["java","-jar","/Workout-0.0.1-SNAPSHOT.jar"]
+  
